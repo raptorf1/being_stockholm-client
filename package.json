@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@capacitor/android": "^1.1.0",
+    "@capacitor/cli": "1.1.0",
+    "@capacitor/core": "1.1.0",
     "@ionic/react": "0.0.6-3",
     "axios": "^0.19.0",
     "exifreader": "^2.8.2",
@@ -32,7 +35,8 @@
     "build": "yarn run build-semantic && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "cy:open": "npm start --silent & cypress open"
+    "cy:open": "npm start --silent & cypress open",
+    "ionic:build": "yarn build && ionic capacitor copy"
   },
   "eslintConfig": {
     "extends": "react-app"

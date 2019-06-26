@@ -4,7 +4,7 @@ const loc = 'http://localhost:3002/api/v1/auth'
 const her = 'https://being-stockholm.herokuapp.com/api/v1/auth'
 
 const config = {
-  authUrl: loc,
+  authUrl: her,
   userAttributes: {
     uid: 'uid',
     id: 'id',

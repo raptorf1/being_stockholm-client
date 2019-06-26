@@ -1,0 +1,7 @@
+{
+  "name": "Being Stockholm",
+  "type": "custom",
+  "integrations": {
+    "capacitor": {}
+  }
+}
