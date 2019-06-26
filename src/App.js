@@ -14,6 +14,9 @@ import LegalInfo from './Components/LegalInfo'
 import MyProfile from './Components/MyProfile'
 import AdminPage from './Components/AdminPage'
 import { connect } from 'react-redux'
+import '@ionic/core/css/core.css'
+import '@ionic/core/css/ionic.bundle.css'
+import { IonApp, IonContent } from '@ionic/react'
 
 
 class App extends Component {
@@ -21,26 +24,30 @@ class App extends Component {
   render() {
     return (
       <>
-        <Sidebar.Pushable
-          as={Container}
-          id='main-content'>
+        <IonApp>
+          <IonContent>
+            <Sidebar.Pushable
+              as={Container}
+              id='main-content'>
 
-          <Switch>
-            <Route exact path='/' component={Map}></Route>
-            <Route exact path='/admin' component={AdminPage}></Route>
-            <Route exact path='/log-in' component={Login}></Route>
-            <Route exact path='/sign-up' component={SignUp}></Route>
-            <Route exact path='/how-this-works' component={HowThisWorks}></Route>
-            <Route exact path='/about' component={AboutProject}></Route>
-            <Route exact path='/contact' component={Contact}></Route>
-            <Route exact path='/being-stockholm-beta' component={BeingStockholmBeta}></Route>
-            <Route exact path='/legal-info' component={LegalInfo}></Route>
-            <Route exact path='/my-profile' component={MyProfile}></Route>
-          </Switch>
+              <Switch>
+                <Route exact path='/' component={Map}></Route>
+                <Route exact path='/admin' component={AdminPage}></Route>
+                <Route exact path='/log-in' component={Login}></Route>
+                <Route exact path='/sign-up' component={SignUp}></Route>
+                <Route exact path='/how-this-works' component={HowThisWorks}></Route>
+                <Route exact path='/about' component={AboutProject}></Route>
+                <Route exact path='/contact' component={Contact}></Route>
+                <Route exact path='/being-stockholm-beta' component={BeingStockholmBeta}></Route>
+                <Route exact path='/legal-info' component={LegalInfo}></Route>
+                <Route exact path='/my-profile' component={MyProfile}></Route>
+              </Switch>
 
-          <MenuSidebar/>
-        </Sidebar.Pushable>
-        <Footer />
+              <MenuSidebar />
+            </Sidebar.Pushable>
+            <Footer />
+          </IonContent>
+        </IonApp>
       </>
     )
   }

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@ionic/react": "0.0.6-3",
     "axios": "^0.19.0",
     "exifreader": "^2.8.2",
     "file-to-array-buffer": "^1.0.0",
